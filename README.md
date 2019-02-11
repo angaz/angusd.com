@@ -5,4 +5,5 @@
 ## Other projects
 
 [Register](https://register.angusd.com)
+
 [Load Shedding](https://loadshedding.angusd.com)
