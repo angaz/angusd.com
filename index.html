@@ -10,6 +10,7 @@
 <style>
     html {
         height: 100%;
+	font-family: 'Roboto', sans-serif;
     }
     body {
         min-height: 100%;
@@ -32,6 +33,10 @@
         background-color: black;
         padding-inline: 0.75em;
         gap: 0.5em;
+	overflow-y: auto;
+	overflow-x: clip;
+	flex-shrink: 0;
+        width: 256px;
     }
     .title {
         display: flex;
@@ -48,10 +53,15 @@
         white-space: nowrap;
     }
 
-    .side-bar > img {
+    .side-bar .img {
+        display: flex;
+        justify-content: center;
         flex: 0 0 auto;
         object-fit: scale-down;
-        max-width: 256px;
+    }
+
+    .side-bar .img img {
+        max-width: 100%;
     }
 
     .side-bar h3 {
@@ -148,17 +158,22 @@
                 </div>
             </div>
             
-            <img
-              src="pfp_hexagon.avif"
-              src="pfp_hexagon.webp"
-              src="pfp_hexagon.png"
-              alt="Profile Picture"
-            />
+	    <div class="img">
+                <div>
+	            <img
+	                src="pfp_hexagon.avif"
+	                src="pfp_hexagon.webp"
+	                src="pfp_hexagon.png"
+	                alt="Profile Picture"
+	            />
+                </div>
+	    </div>
             
             <h3>Me Online</h3>
             <div class="links">
                 <a href="https://github.com/SN9NV/" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/angusdippenaar/" target="_blank">LinkedIn</a>
+                <a href="angus-dippenaar.asc" target="_blank">GPG Key</a>
             </div>
 
             <h3>Skills</h3>
@@ -196,7 +211,7 @@
                 <div class="skill">
                     <span>Frontend (Mainly React)</span>
                     <div>
-                        <div style="width:60%;"></div>
+                        <div style="width:50%;"></div>
                     </div>
                 </div>
             </div>
@@ -205,7 +220,7 @@
             <div class="cool-tech">
                 <span>CockroachDB</span>
                 <span>Ziglang</span>
-                <span>WebAssembly (Especially server-side)</span>
+                <span>WebAssembly</span>
             </div>
         </div>
 
