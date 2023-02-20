@@ -1,297 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <title>Angus Dippenaar</title>
 
-<style>
-    html {
+    <style>
+      html {
         height: 100%;
-	font-family: 'Roboto', sans-serif;
-    }
-    body {
+        font-family: "Roboto", sans-serif;
+      }
+      body {
         min-height: 100%;
         height: 100%;
         margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-    main {
+      }
+      main {
         display: flex;
         flex-direction: row;
         align-items: stretch;
         min-height: 100%;
-    }
-    .side-bar {
+      }
+      .side-bar {
         display: flex;
         flex-direction: column;
         color: white;
         background-color: black;
         padding-inline: 0.75em;
         gap: 0.5em;
-	overflow-y: auto;
-	overflow-x: clip;
-	flex-shrink: 0;
+        overflow-y: auto;
+        overflow-x: clip;
+        flex-shrink: 0;
         width: 256px;
-    }
-    .title {
+      }
+      .title {
         display: flex;
         flex-direction: column;
-    }
-    .subtitle {
+      }
+      .subtitle {
         font-size: 0.8em;
         color: #eee;
         display: flex;
         flex-direction: column;
-    }
-    .subtitle span {
+      }
+      .subtitle span {
         margin-inline-end: 0.25em;
         white-space: nowrap;
-    }
-
-    .side-bar .img {
+      }
+      .side-bar .img {
         display: flex;
         justify-content: center;
         flex: 0 0 auto;
         object-fit: scale-down;
-    }
-
-    .side-bar .img img {
+      }
+      .side-bar .img img {
         max-width: 100%;
-    }
-
-    .side-bar h3 {
+      }
+      .side-bar h3 {
         background-color: #777;
         margin-block-start: 0.75em;
         margin-block-end: 0.1em;
         padding-block: 0.25em;
         margin-inline: -0.75em;
         padding-inline: 0.75em;
-    }
-
-    .links {
+      }
+      .links {
         display: flex;
         flex-direction: column;
-    }
-    .links a {
+      }
+      .links a {
         color: white;
-    }
-
-    .skills {
+      }
+      .skills {
         display: flex;
         flex-direction: column;
         gap: 0.5em;
-    }
-    .skill {
+      }
+      .skill {
         display: flex;
         flex-direction: column;
         gap: 0.25em;
-    }
-    .skill>div {
+      }
+      .skill > div {
         border: 1px solid #eee;
         height: 1em;
         width: 100%;
-    }
-    .skill>div>div {
+      }
+      .skill > div > div {
         height: 100%;
-        background-color: #FF7034;
-    }
-    .side-bar pre {
+        background-color: #ff7034;
+      }
+      .side-bar pre {
         margin: 0;
-    }
-
-    .cool-tech {
+      }
+      .cool-tech {
         display: flex;
         flex-direction: column;
-    }
-
-    .main-section {
+      }
+      .main-section {
         display: flex;
         flex-direction: column;
         padding-inline: 0.75em;
         gap: 0.5em;
         overflow: auto;
-    }
-    .about-me p {
+      }
+      .about-me p {
         margin: 0;
         margin-block: 0.5em;
-    }
-
-    .experiance, .education {
+      }
+      .experiance,
+      .education {
         display: flex;
         flex-direction: column;
-    }
-
-    .experiance h2, .education h2 {
+      }
+      .experiance h2,
+      .education h2 {
         margin: 0;
         padding-block: 0.25em;
         border-block: 2px solid #eee;
         gap: 2em;
-    }
-
-    .job,
-    .institution {
+      }
+      .job,
+      .institution {
         display: flex;
         flex-direction: column;
-    }
-
-    .job h3,
-    .institution h3 {
+      }
+      .job h3,
+      .institution h3 {
         margin: 0;
         margin-block: 0.5em;
-    }
-</style>
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <main>
-        <div class="side-bar">
-            <div class="title">
-                <h1>Angus Dippenaar</h1>
-                <span>Software Engineer</span>
-                <div class="subtitle">
-                    <span>I tell computers what to do.</span>
-                    <span>Sometimes they do what I wanted.</span>
-                </div>
-            </div>
-            
-	    <div class="img">
-                <div>
-	            <img
-	                src="pfp_hexagon.avif"
-	                src="pfp_hexagon.webp"
-	                src="pfp_hexagon.png"
-	                alt="Profile Picture"
-	            />
-                </div>
-	    </div>
-            
-            <h3>Me Online</h3>
-            <div class="links">
-                <a href="https://github.com/SN9NV/" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/angusdippenaar/" target="_blank">LinkedIn</a>
-                <a href="angus-dippenaar.asc" target="_blank">GPG Key</a>
-            </div>
-
-            <h3>Skills</h3>
-            <div class="skills">
-                <div class="skill">
-                    <span>PostgreSQL</span>
-                    <div>
-                        <div style="width:80%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Golang</span>
-                    <div>
-                        <div style="width:75%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Python</span>
-                    <div>
-                        <div style="width:70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Linux/Sysadmin (I use Nix BTW)</span>
-                    <div>
-                        <div style="width:70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>IaC (Terraform, Tanka, AWS CLI)</span>
-                    <div>
-                        <div style="width:70%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Frontend (Mainly React)</span>
-                    <div>
-                        <div style="width:50%;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <h3>Cool Tech on my Radar</h3>
-            <div class="cool-tech">
-                <span>CockroachDB</span>
-                <span>Ziglang</span>
-                <span>WebAssembly</span>
-            </div>
+      <div class="side-bar">
+        <div class="title">
+          <h1>Angus Dippenaar</h1>
+          <span>Software Engineer</span>
         </div>
 
-        <div class="main-section">
-            <div class="about-me">
-            <p>
-                I like to learn about new technologies, and use those technologies to make my side projects more jank. This page is hosted on IPFS for example.
-            </p>
-            <p>
-                I believe that the best solution is most likely the simplest one.
-            </p>
-            <p>
-                My other interests include learning too many useless facts about anything anyone is willing to talk about. If there's some maths, science, or technology involved, I will probably be interested in it.
-            </p>
-            <p>
-                Some of my weekend projects would include photography, making something with my 3D printer, or making something with a microcontroller.
-            </p>
-            <p>
-                What I cannot create, I do not understand. --Richard Feynman
-            </p>
-            </div>
-
-            <div class="experiance">
-                <h2>Experiance</h2>
-                <div class="job">
-                    <h3>Showmax Engineering</h3>
-                    <span>May 2020 - present</span>
-                    <span>Database Administrator / DevOps Engineer</span>
-                    <ul>
-                        <li>Maintaining databases, improving data structure and queries</li>
-                        <li>Writing Terraform/Terragrunt modules for storage/databases during the migration to AWS.</li>
-                        <li>Writing internal tools for automating processes. Main languages: Go, Python</li>
-                        <li>On-call/general platform stability.</li>
-                        <li>General operations tasks: installing, upgrading systems, configuring DNS/load balancing, ...</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="job">
-                <h3>Quant Solutions</h3>
-                <span>October 2018 - May 2020</span>
-                <span>DevOps Engineer / Full-Stack Developer</span>
-                <ul>
-                    <li>Created an internal system used for managing the deployments of client's websites in Docker containers across many servers, it was basically a super simple Kubernetes with HAProxy as ingress.</li>
-                    <li>Maintained old internal tools.</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <h3>Ornico</h3>
-                <span>November 2017 - October 2018</span>
-                <span>System Administrator / Full-Stack Developer</span>
-                <ul>
-                    <li>Set up an maintained Linux systems for storage (1PB ZFS+Gluster NAS), and IPTV/IP Radio recording systems.</li>
-                    <li>Developed internal tools for managing the recorded media.</li>
-                    <li>Backend developer for an internal web system for employees to use for clipping and adding metadata to the recrded media.</li>
-                    <li>An audio-fingerprinting system for detecting blocks of adverts to simplify the jobs of the employees who had to categorize the content.</li>
-                </ul>
-            </div>
-
-            <div class="education">
-                <h2>Education</h2>
-                <div class="institution">
-                    <h3>WeThinkCode</h3>
-                    <span>2016 - 2018</span>
-                    <span>Programming college</span>
-                    <span>Learned C, JS/Web Technologies, C++, OpenGL</span>
-                </div>
-            </div>
+        <div class="img">
+          <picture>
+            <source srcset="pfp_hexagon.avif" type="image/avif" />
+            <source srcset="pfp_hexagon.webp" type="image/webp" />
+            <img src="pfp_hexagon.png" alt="Profile Picture" />
+          </picture>
         </div>
 
+        <h3>Me Online</h3>
+        <div class="links">
+          <a href="https://github.com/SN9NV/" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/angusdippenaar/" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="angus-dippenaar.asc" target="_blank">GPG Key</a>
+        </div>
+
+        <h3>Skills</h3>
+        <div class="skills">
+          <div class="skill">
+            <span>PostgreSQL</span>
+            <div>
+              <div style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Golang</span>
+            <div>
+              <div style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Python</span>
+            <div>
+              <div style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Linux/Sysadmin (I use Nix BTW)</span>
+            <div>
+              <div style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>IaC (Terraform, Tanka, AWS CLI)</span>
+            <div>
+              <div style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Frontend (Mainly React)</span>
+            <div>
+              <div style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Cool Tech on my Radar</h3>
+        <div class="cool-tech">
+          <a href="https://github.com/cockroachdb/cockroach" target="_blank">CockroachDB</a>
+          <a href="https://github.com/ziglang/zig" target="_blank">Ziglang</a>
+          <a href="https://webassembly.org" target="_blank">WebAssembly</a>
+        </div>
+      </div>
+
+      <div class="main-section">
+        <div class="about-me">
+          <p>
+            I like to learn about new technologies, and use those technologies
+            to make my side projects more jank. This page is hosted on IPFS for
+            example.
+          </p>
+          <p>
+            I believe that the best solution is most likely the simplest one.
+          </p>
+          <p>
+            My other interests include learning too many useless facts about
+            anything anyone is willing to talk about. If there's some maths,
+            science, or technology involved, I will probably be interested in
+            it.
+          </p>
+          <p>
+            Some of my weekend projects would include photography, making
+            something with my 3D printer, or making something with a
+            microcontroller.
+          </p>
+          <p>What I cannot create, I do not understand. --Richard Feynman</p>
+        </div>
+
+        <div class="experiance">
+          <h2>Experiance</h2>
+          <div class="job">
+            <h3>Showmax Engineering</h3>
+            <span>May 2020 - present</span>
+            <span>Database Administrator / DevOps Engineer</span>
+            <ul>
+              <li>
+                Maintaining databases, improving data structure and queries
+              </li>
+              <li>
+                Writing Terraform/Terragrunt modules for storage/databases
+                during the migration to AWS.
+              </li>
+              <li>
+                Writing internal tools for automating processes. Main languages:
+                Go, Python
+              </li>
+              <li>On-call/general platform stability.</li>
+              <li>
+                General operations tasks: installing, upgrading systems,
+                configuring DNS/load balancing, ...
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job">
+          <h3>Quant Solutions</h3>
+          <span>October 2018 - May 2020</span>
+          <span>DevOps Engineer / Full-Stack Developer</span>
+          <ul>
+            <li>
+              Created an internal system used for managing the deployments of
+              client's websites in Docker containers across many servers, it was
+              basically a super simple Kubernetes with HAProxy as ingress.
+            </li>
+            <li>Maintained old internal tools.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Ornico</h3>
+          <span>November 2017 - October 2018</span>
+          <span>System Administrator / Full-Stack Developer</span>
+          <ul>
+            <li>
+              Set up an maintained Linux systems for storage (1PB ZFS+Gluster
+              NAS), and IPTV/IP Radio recording systems.
+            </li>
+            <li>Developed internal tools for managing the recorded media.</li>
+            <li>
+              Backend developer for an internal web system for employees to use
+              for clipping and adding metadata to the recrded media.
+            </li>
+            <li>
+              An audio-fingerprinting system for detecting blocks of adverts to
+              simplify the jobs of the employees who had to categorize the
+              content.
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
