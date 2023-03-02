@@ -30,22 +30,40 @@
         flex-direction: row;
         align-items: stretch;
         min-height: 100%;
+        flex-wrap: wrap;
       }
       .side-bar {
         display: flex;
         flex-direction: column;
         color: white;
         background-color: black;
-        padding-inline: 0.75em;
+        padding: 0.75em;
         gap: 0.5em;
         overflow-y: auto;
         overflow-x: clip;
         flex-shrink: 0;
-        width: 256px;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .side-bar > .title > h1 {
+        margin: 0;
       }
       .title {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 1em;
+      }
+      @media (width > 762px) {
+        .side-bar {
+          width: 256px;
+        }
+        main {
+          flex-wrap: nowrap;
+        }
+        .title {
+          align-items: start;
+        }
       }
       .subtitle {
         font-size: 0.8em;
@@ -62,6 +80,7 @@
         justify-content: center;
         flex: 0 0 auto;
         object-fit: scale-down;
+        max-width: 256px;
       }
       .side-bar .img img {
         max-width: 100%;
@@ -148,14 +167,13 @@
         <div class="title">
           <h1>Angus Dippenaar</h1>
           <span>Software Engineer</span>
-        </div>
-
-        <div class="img">
-          <picture>
-            <source srcset="pfp_hexagon.avif" type="image/avif" />
-            <source srcset="pfp_hexagon.webp" type="image/webp" />
-            <img src="pfp_hexagon.png" alt="Profile Picture" />
-          </picture>
+          <div class="img">
+            <picture>
+              <source srcset="pfp_hexagon.avif" type="image/avif" />
+              <source srcset="pfp_hexagon.webp" type="image/webp" />
+              <img src="pfp_hexagon.png" alt="Profile Picture" />
+            </picture>
+          </div>
         </div>
 
         <h3>Me Online</h3>
@@ -209,7 +227,9 @@
 
         <h3>Cool Tech on my Radar</h3>
         <div class="cool-tech">
-          <a href="https://github.com/cockroachdb/cockroach" target="_blank">CockroachDB</a>
+          <a href="https://github.com/cockroachdb/cockroach" target="_blank"
+            >CockroachDB</a
+          >
           <a href="https://github.com/ziglang/zig" target="_blank">Ziglang</a>
           <a href="https://webassembly.org" target="_blank">WebAssembly</a>
         </div>
