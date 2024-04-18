@@ -297,7 +297,7 @@
           <h3><a href="https://www.ethernets.io" target="_blank">ethernets.io</a></h3>
           <span>July 2023 - present</span>
           <p>
-            Took an unmaintained idea for an Ethereum network crawler, make it
+            Took an unmaintained POC for an Ethereum network crawler, make it
             functional again, and added many new features. It's basically
             entirely new. I'm still working on it in my spare time/weekends.
           </p>
@@ -305,6 +305,26 @@
             The entire system, including Postgres setup, is defined in the Nix
             Flake in the project, and is running in a NixOS VPS.
           </p>
+
+          <h4>Technologies</h4>
+          <ul>
+            <li><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></li>
+            <ul>
+              <li><a href="https://www.timescale.com/" target="_blank">TimescaleDB (Timeseries extension)</a></li>
+            </ul>
+            <li><a href="https://go.dev/" target="_blank">Golang (API and crawler)</a></li>
+            <li><a href="https://templ.guide/" target="_blank">templ (Server-side rendered templating system)</a></li>
+            <li><a href="https://dev.maxmind.com/geoip/geolite2-free-geolocation-data" target="_blank">
+                Maxmind GeoLite2 Cities DB
+              </a></li>
+            <li><a href="https://nixos.org/" target="_blank">NixOS</a></li>
+            <li>Monitoring and Alerting</li>
+            <ul>
+              <li><a href="https://prometheus.io/" target="_blank">Prometheus</a></li>
+              <li><a href="https://grafana.com/" target="_blank">Grafana (Graphs and alerting)</a></li>
+              <li><a href="https://ntfy.sh/" target="_blank">ntfy.sh (Push notifications for alerts)</a></li>
+            </ul>
+          </ul>
         </div>
 
         <div class="job">
@@ -341,6 +361,14 @@
               Local storage for favourites.
             </li>
           </ul>
+
+          <h4>Technologies</h4>
+          <ul>
+            <li><a href="https://react.dev/" target="_blank">React</a></li>
+            <ul>
+              <li><a href="https://react.i18next.com/" target="_blank">React i18next (Translations)</a></li>
+            </ul>
+          </ul>
         </div>
       </div>
 
@@ -357,17 +385,56 @@
             </li>
             <li>
               Writing Terraform/Terragrunt modules for storage/databases
-              during the migration to AWS.
+              during the migration from on-prem to AWS.
             </li>
             <li>
               Writing internal tools for automating processes. Main languages:
               Go, Python
             </li>
+            <li>Some projects in Go</li>
+            <ul>
+              <li>Data processing with Kafka</li>
+              <li>Backend API for watch history</li>
+              <li>Prometheus exporter for Akamai</li>
+              <li>Tool for creating on-call events in the HR system based on the history in OpsGenie</li>
+            </ul>
             <li>On-call/general platform stability.</li>
             <li>
               General operations tasks: installing, upgrading systems,
               configuring DNS/load balancing, ...
             </li>
+          </ul>
+
+          <h4>Technologies</h4>
+          <ul>
+            <li><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></li>
+            <ul>
+              <li><a href="https://patroni.readthedocs.io/en/latest/" target="_blank">
+                  Patroni (Replication / Standby)</a></li>
+            </ul>
+            <li><a href="https://kafka.apache.org/" target="_blank">Apache Kafka</a></li>
+            <li><a href="https://www.rabbitmq.com/" target="_blank">RabbitMQ</a></li>
+            <li><a href="https://redis.io/" target="_blank">Redis</a></li>
+            <li><a href="https://go.dev/" target="_blank">Golang</a></li>
+            <li><a href="https://www.terraform.io/" target="_blank">Terraform</a></li>
+            <li><a href="https://terragrunt.gruntwork.io/" target="_blank">Terragrunt</a></li>
+            <li><a href="https://kubernetes.io/" target="_blank">Kubernetes</a></li>
+            <li><a href="https://tanka.dev/" target="_blank">
+                Tanka (The most over-powered K8s resource management tool)</a></li>
+            <li><a href="https://aws.amazon.com/" target="_blank">AWS (Used many services)</a></li>
+            <li><a href="https://www.gluster.org/" target="_blank">GlusterFS</a></li>
+            <li>Monitoring and Alerting</li>
+            <ul>
+              <li><a href="https://prometheus.io/" target="_blank">Prometheus</a></li>
+              <li><a href="https://grafana.com/" target="_blank">Grafana</a></li>
+              <li>
+                <a href="https://prometheus.io/docs/alerting/latest/alertmanager/" target="_blank">Alertmanager</a>
+              </li>
+              <li><a href="https://grafana.com/oss/loki/" target="_blank">
+                  Grafana Loki (I made a PR for downloading files in parallel)</a></li>
+              <li><a href="https://www.atlassian.com/software/opsgenie" target="_blank">
+                  Opsgenie (On-call management, alerting)</a></li>
+            </ul>
           </ul>
         </div>
       </div>
@@ -383,6 +450,15 @@
             basically a super simple Kubernetes with HAProxy as ingress.
           </li>
           <li>Maintained old internal tools.</li>
+        </ul>
+
+        <h4>Technologies</h4>
+        <ul>
+          <li><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></li>
+          <li><a href="https://www.docker.com/" target="_blank">Docker</a></li>
+          <li><a href="https://www.ansible.com/" target="_blank">Ansible</a></li>
+          <li><a href="https://www.haproxy.org/" target="_blank">HAProxy</a></li>
+          <li><a href="https://www.python.org/" target="_blank">Python</a></li>
         </ul>
       </div>
 
@@ -405,6 +481,16 @@
             simplify the jobs of the employees who had to categorize the
             content.
           </li>
+        </ul>
+
+        <h4>Technologies</h4>
+        <ul>
+          <li><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></li>
+          <li><a href="https://www.docker.com/" target="_blank">Docker</a></li>
+          <li><a href="https://www.ansible.com/" target="_blank">Ansible</a></li>
+          <li><a href="https://www.python.org/" target="_blank">Python</a></li>
+          <li><a href="https://www.gluster.org/" target="_blank">GlusterFS</a></li>
+          <li><a href="https://openzfs.org/wiki/Main_Page" target="_blank">ZFS</a></li>
         </ul>
       </div>
     </div>
